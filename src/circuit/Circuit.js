@@ -8,6 +8,12 @@ class Circuit extends Component {
     this.initialize()
   }
 
+  componentWillUnmount() {
+    if (this.cleanUpRunningCircuit) {
+      this.cleanUpRunningCircuit()
+    }
+  }
+
   initialize = () => {
     if (this.cleanUpRunningCircuit) {
       this.cleanUpRunningCircuit()
