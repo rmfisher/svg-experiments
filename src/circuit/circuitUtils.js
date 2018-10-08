@@ -1,15 +1,16 @@
 import { select } from 'd3-selection'
 
+const isMobile = window.innerWidth <= 768
 const dotSpacing = 44
 const dotOffset = 22
 const dotRadius = 3
 const minPoints = 3
 const maxPoints = 5
 const minSegmentLength = 4
-const maxSegmentLength = 10
-const wormSpeed = 20 // Dots covered per second.
-const wormLength = 15
-const wormInterval = 100 // In ms.
+const maxSegmentLength = isMobile ? 8 : 10
+const wormSpeed = isMobile ? 10 : 20 // Dots covered per second.
+const wormLength = isMobile ? 12 : 15
+const wormInterval = isMobile ? 200 : 100 // In ms.
 const wormStartDelay = 50 // In ms.
 const startPoints = []
 
