@@ -1,0 +1,28 @@
+@import '../Variables.scss';
+
+.circuit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.circuit-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1, 1.1) perspective(250px) rotateX(2deg) rotateY(3deg) rotateZ(-2deg);
+}
+
+.circuit-dot {
+  fill: $background-2;
+}
+
+.circuit-worm {
+  stroke-width: 5px;
+  stroke: $background-3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: transparent;
+}
