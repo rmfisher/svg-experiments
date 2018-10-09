@@ -15,6 +15,7 @@
   height: 100%;
   max-height: 80vw;
   overflow: visible;
+  pointer-events: none;
 
   .lower-path {
     fill: $foreground-2;
