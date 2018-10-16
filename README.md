@@ -2,4 +2,4 @@
 
 Experiments with svg animations.
 
-https://rmfisher.github.io/svg-experiments
+Demo: https://rmfisher.github.io/svg-experiments
